@@ -1,11 +1,15 @@
+import BgVid from "./components/BgVid";
+import Nav from "./components/Nav";
+
 
 function App (){
   return (
-    <div className="App">
-      <h1 className="text-3xl bg-pink-400  font-bold underline">
-        Hello world!
-      </h1>
+    <div className="relative">
+    <BgVid/>
+    <Nav></Nav>
+
     </div>
+    
   )
 }
 export default App;
