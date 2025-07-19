@@ -1,5 +1,6 @@
 import BgVid from "./components/BgVid";
 import Nav from "./components/Nav";
+import Hero from "./components/Hero";
 
 
 function App (){
@@ -7,7 +8,7 @@ function App (){
     <div className="relative">
     <BgVid/>
     <Nav></Nav>
-
+    <Hero></Hero>
     </div>
     
   )

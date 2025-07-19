@@ -9,21 +9,29 @@
 html , body {
     height: 100%;
     width: 100%;    
+    
 
 }
 #root {
     position: relative;
 }
 
-nav{
-    padding: 10px 10px;
+nav , .hero1 {
+    padding: 10px 20px;
 }
+
+
+
  
 @media (width > 768px) {
-    nav{
-        padding: 10px 40px;
+    nav , .hero1{
+        padding: 10px 90px;
     }
+    
+    
 }
+
+
 
 
     

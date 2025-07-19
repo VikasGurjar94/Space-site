@@ -3,7 +3,7 @@
 function Nav() {
     return (
         <>
-            <nav   className=" relative  px-10 h-[10vh] flex justify-between items-center bg-black/50 backdrop:blur  ">
+            <nav   className=" fixed w-full   px-10 h-[10vh] flex justify-between items-center bg-black/50 backdrop-blur-sm  ">
                 <div className="cursor-pointer  flex justify-between items-center ">
                     <img
                         className="md:h-[50px] md:w-[50px] h-[30px] w-[30px] " src="/assets/logo.png" alt="logo" />
