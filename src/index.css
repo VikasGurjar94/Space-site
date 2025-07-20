@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html , body {
@@ -19,14 +20,30 @@ html , body {
 nav , .hero1 {
     padding: 10px 20px;
 }
+#service{
+    padding: 10px  ;
+}
+.banner{
+    padding : 5px 10px;
+}
 
 
-
+.bannerBig{
+    padding-top: 0px;
+}
  
 @media (width > 768px) {
-    nav , .hero1{
-        padding: 10px 90px;
+    nav , .hero1  {
+        padding: 10px 50px;
     }
+    .bannerBig{
+    padding: 20px;
+}
+ 
+    #service{
+    padding:  10px 40px  ;
+}
+
     
     
 }

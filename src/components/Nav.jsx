@@ -3,8 +3,8 @@
 function Nav() {
     return (
         <>
-            <nav   className=" fixed w-full   px-10 h-[10vh] flex justify-between items-center bg-black/50 backdrop-blur-sm  ">
-                <div className="cursor-pointer  flex justify-between items-center ">
+            <nav   className=" fixed  w-full z-999  px-10 h-[10vh] flex justify-between items-center bg-black/10 backdrop-blur-sm  ">
+                <div className="cursor-pointer hover:scale-105 flex justify-between items-center ">
                     <img
                         className="md:h-[50px] md:w-[50px] h-[30px] w-[30px] " src="/assets/logo.png" alt="logo" />
 
@@ -14,7 +14,7 @@ function Nav() {
                     <a href="#">About</a><a href="#">Space</a><a href="#">Satellite</a><a href="#">Technology</a>
                 </div>
                 <div className="text-white">
-                    <button className="border w-[100px] rounded-lg h-[40px] text-[22px]  ">Log in</button>
+                    <button className="border hover:bg-blue-700 hover:ring-1 hover:scale-105 w-[80px] font-bold rounded-lg h-[35px] text-[18px]  ">Log in</button>
                 </div>
             </nav>
         </>
