@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Service from "./components/Service";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 function App (){
   return (<>
@@ -12,6 +13,7 @@ function App (){
     <Hero></Hero>
     <Service></Service>
     <Banner/>
+    <Footer></Footer>
     </div>
   </>
     

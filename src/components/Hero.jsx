@@ -11,7 +11,7 @@ function Hero (){
                 </h1>
                 <button className="w-[150px] h-[40px] hover:ring-1  text-center  text-white text-xl font-semibold bg-blue-600 rounded-2xl   ">Learn More</button>
             </div>
-            <img className="w-full z-50 " src="/assets/moon.png" alt="" />
+            <img className="w-full z-50  " src="/assets/moon.png" alt="" />
             <div className=" h-[30px] md:h-[40px] lg:h-[60px] w-full z-998 absolute bottom-0 bg-gradient-to-b from-0% from-transparent  to-black  to-90% ">
 
             </div>

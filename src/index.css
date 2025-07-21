@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+
+.primary-btn {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600;   /* font-semibold */
+    background-color: #2563eb; /* bg-blue-600 */
+    border-radius: 1rem; /* rounded-2xl */
+    transition: box-shadow 0.2s;
+}
+.primary-btn:hover {
+    box-shadow: 0 0 0 2px white; /* hover:ring-1 */
+}
+
+footer button {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem; /* text-xl */
+    font-weight: 600;   /* font-semibold */
+    background-color: #2563eb; /* bg-blue-600 */
+    border-radius: 1rem; /* rounded-2xl */
+    transition: box-shadow 0.2s;
+}
+
+footer input {
+    padding: 5px 5px;
+
+}
+
+footer button:hover {
+    box-shadow: 0 0 0 2px white; /* hover:ring-1 */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +54,11 @@ html , body {
     position: relative;
 }
 
+footer{
+    padding: 50px 40px;
+
+}
+
 nav , .hero1 {
     padding: 10px 20px;
 }
@@ -25,6 +67,9 @@ nav , .hero1 {
 }
 .banner{
     padding : 5px 10px;
+    margin-bottom: 50px;
+
+    
 }
 
 
@@ -36,6 +81,7 @@ nav , .hero1 {
     nav , .hero1  {
         padding: 10px 50px;
     }
+    
     .bannerBig{
     padding: 20px;
 }
