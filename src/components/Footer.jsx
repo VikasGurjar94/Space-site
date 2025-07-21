@@ -13,14 +13,14 @@ function Footer() {
     return (
         <>
             <footer className="bg-gray-800 flex flex-col gap-10 " >
-                <div className="w-full bg-gray-800 text-white flex flex-col md:flex-row md:items-baseline justify-around">
+                <div className="w-full bg-gray-800 text-white flex gap-10 flex-col md:flex-row md:items-baseline justify-around">
                     <div className="flex flex-col justify-around gap-5">
                         <div className="flex flex-col gap-2">
                             <h1 className="text-[25px] font-semibold ">BE READY TO GROW</h1>
                             <p >Get Exclusive Updates To Your Box</p>
                         </div>
                         <div className="flex justify-baseline gap-4 md:gap-2 items-center ">
-                            <input type="email" placeholder="Email" className="border border-white w-[70%] rounded-[5px] focus:outline-2 h-8 focus:outline-blue-600 " />
+                            <input type="email" placeholder="Email" className="border  border-white w-[70%] md:w-[95%] rounded-[5px] focus:outline-2 h-8 focus:outline-blue-600 " />
                             <button>GET</button>
                         </div>
 

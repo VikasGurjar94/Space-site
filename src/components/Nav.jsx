@@ -1,6 +1,22 @@
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 
+gsap.registerPlugin(useGSAP,ScrollTrigger,SplitText);
 
 function Nav() {
+
+    useGSAP(()=>{
+        gsap.from('nav' , {
+            yPercent : '-100' ,
+            opacity : 0,
+            duration : 1 ,
+            ease : 'power2'
+        })
+    },[])
+
     return (
         <>
             <nav   className=" fixed  w-full z-999  px-10 h-[10vh] flex justify-between items-center bg-black/10 backdrop-blur-sm  ">
