@@ -8,10 +8,17 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";    
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { useState , useEffect } from "react";
+import { RingLoader } from "react-spinners";
+
+  // return ;
+
 
 function App (){
-gsap.registerPlugin(ScrollTrigger,SplitText);
+    const [loading , setLoading] = useState(true) ;
 
+
+gsap.registerPlugin(ScrollTrigger,SplitText);
 
      useGSAP(()=>{
 
@@ -41,11 +48,25 @@ gsap.registerPlugin(ScrollTrigger,SplitText);
         })
 
 
-    },[])
+    },[loading])
+
+
+
+    useEffect(()=>{
+      setTimeout(()=>{
+        setLoading(false);
+      } , 2000)
+    } , [])
 
 
   return (<>
-  <div className="relative">
+
+    {
+      loading ? <div className="flex h-screen w-full justify-center items-center">
+<RingLoader size='40'  color="#000000" /> <h1 className="text-[#000000]">Loading ...</h1>
+      </div>
+       : <>
+  <div className="flex flex-col relative">
     <BgVid/>
     <Nav></Nav>
     <Hero></Hero>
@@ -53,6 +74,10 @@ gsap.registerPlugin(ScrollTrigger,SplitText);
     <Banner/>
     <Footer></Footer>
     </div>
+      </>
+    }
+    
+    
   </>
     
     
