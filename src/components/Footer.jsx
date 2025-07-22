@@ -27,7 +27,7 @@ function Footer() {
 
                     </div>
 
-                    <div className="flex justify-between items-center md:gap-7 ">
+                    <div className="flex justify-between md:w-1/4 items-center md:gap-7 ">
                         <div>
                             <h1 className="text-xl font-semibold">Quick Links</h1>
                             <br />
